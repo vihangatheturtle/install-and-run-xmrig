@@ -1,4 +1,5 @@
 echo Installing XMRig
+sudo apt-get update
 sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev screen -y
 git clone https://github.com/vihangatheturtle/axmrig.git
 mkdir axmrig/build && cd axmrig/build
